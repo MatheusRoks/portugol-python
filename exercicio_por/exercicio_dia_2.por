@@ -17,20 +17,25 @@ programa
 			leia (time)
 			se (time <= 12){
 				escreva("excelente!")
+				escreva("O atleta ", name," de ", age, " anos, concluiu em ", time," segundos ")
 				}
 			senao se (time > 12 e time < 14){
 				escreva("Parabens!")
+				escreva("O atleta ", name," de ", age, " anos, concluiu em ", time," segundos ")
 				}
 			senao se (time > 14 e time <=16){
 				escreva("Tempo ok")
+				escreva("O atleta ", name," de ", age, " anos, concluiu em ", time," segundos ")
 				}
-			senao{
+			senao se (time > 16){
 				escreva("tempo insuficiente")
+				escreva("O atleta ", name," de ", age, " anos, concluiu em ", time," segundos ")
 				}
 			}
 		senao{
 			escreva("A idade informada não corresponde aos critérios da competição")
 		}
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -38,7 +43,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 434; 
+ * @POSICAO-CURSOR = 968; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
